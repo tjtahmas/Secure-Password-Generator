@@ -16,7 +16,28 @@
         <div class="card-header">
           <h2>Generate a Password</h2>
         </div>
+        <div class="Textbox">
+          <br>
+          <label for="characters">Number of Characters:</label>
+          <input type="text" id="characters" name="characters">
+          <!--<input type="submit" value="submit" onclick="getChars()"/-->
+          <br>
+        </div>
+        <div class="Boxes">
+          <br>
+          <input type="checkbox" id="lowercase" name="lowercase" value="true">
+          <label for="lowercase"> LowerCase (abc)</label><br>
+          <input type="checkbox" id="uppercase" name="uppercase" value="true">
+          <label for="uppercase"> UpperCase (ABC)</label><br>
+          <input type="checkbox" id="numericChar" name="numericChar" value="true">
+          <label for= "numericChar"> Numbers (123)</label><br>
+          <input type="checkbox" id="specialChar" name="specialChar" value="true">
+          <label for= "specialChar"> Special Characters (!@#)</label>
+          <!--<input type="submit" value="submit" onclick="getBoxes()"/>-->
+          <br>
+        </div>
         <div class="card-body">
+          <br>
           <textarea
             readonly
             id="password"
